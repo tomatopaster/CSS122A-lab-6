@@ -23,7 +23,7 @@ top dut                    // declare an inst of top called "dut" (device under 
     .clk(clk_tb)           // connect dut's clk wire to clk_tb
 );
 
-localparam CLK_PERIOD = /** clk period */;
+localparam CLK_PERIOD = 10;
 always #(CLK_PERIOD/2) clk_tb=~clk_tb;          // toggle clk_tb every #(CLK_PERIOD/2) ticks
 
 initial begin
